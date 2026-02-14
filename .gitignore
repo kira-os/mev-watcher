@@ -7,7 +7,7 @@ pnpm-lock.yaml
 # Build outputs
 .next/
 out/
-dist/
+# dist/  # Keeping for GitHub Pages
 build/
 
 # Environment variables

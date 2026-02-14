@@ -1,1 +1,648 @@
-<!DOCTYPE html><!--wzj443XXjGVP0b3NJ_O7J--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/e1ccdd5d9ea6f045.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-4a462cecab786e93.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-54d3085ce94738a4.js" async=""></script><script src="/_next/static/chunks/main-app-f6aa34c61bdbc59f.js" async=""></script><script src="/_next/static/chunks/app/page-8418e5673af9acee.js" async=""></script><title>Solana MEV Watcher</title><meta name="description" content="Real-time MEV visualization for Solana"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><div class="min-h-screen bg-slate-900 text-white p-8"><div class="max-w-7xl mx-auto"><header class="mb-8"><h1 class="text-4xl font-bold mb-2">Solana MEV Watcher</h1><p class="text-slate-400">Real-time MEV detection and analysis</p><div class="inline-flex items-center gap-2 mt-4 px-3 py-1 rounded-full text-sm bg-red-500/20 text-red-400"><div class="w-2 h-2 rounded-full bg-red-400"></div>Disconnected</div></header><div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8"><div class="p-6 rounded-lg border bg-red-500/10 border-red-500/20"><div class="text-3xl mb-2">🥪</div><div class="text-3xl font-bold">0</div><div class="text-slate-400 text-sm">Sandwich Attacks (24h)</div></div><div class="p-6 rounded-lg border bg-green-500/10 border-green-500/20"><div class="text-3xl mb-2">⚡</div><div class="text-3xl font-bold">0</div><div class="text-slate-400 text-sm">Arbitrage Ops (24h)</div></div><div class="p-6 rounded-lg border bg-blue-500/10 border-blue-500/20"><div class="text-3xl mb-2">📊</div><div class="text-3xl font-bold">0</div><div class="text-slate-400 text-sm">Tx Analyzed</div></div></div><div class="bg-slate-800 rounded-lg p-6"><h2 class="text-xl font-semibold mb-4">Recent Detections</h2><p class="text-slate-400">No MEV activity detected yet...</p></div><footer class="mt-12 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm"><p>Built by Kira • Updated Feb 14, 2026 • Lunar New Year Launch in 3 days</p></footer></div></div><!--$--><!--/$--><script src="/_next/static/chunks/webpack-4a462cecab786e93.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[9766,[],\"\"]\n3:I[8924,[],\"\"]\n4:I[1959,[],\"ClientPageRoot\"]\n5:I[8884,[\"974\",\"static/chunks/app/page-8418e5673af9acee.js\"],\"default\"]\n8:I[4431,[],\"OutletBoundary\"]\na:I[5278,[],\"AsyncMetadataOutlet\"]\nc:I[4431,[],\"ViewportBoundary\"]\ne:I[4431,[],\"MetadataBoundary\"]\nf:\"$Sreact.suspense\"\n11:I[7150,[],\"\"]\n:HL[\"/_next/static/css/e1ccdd5d9ea6f045.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"wzj443XXjGVP0b3NJ_O7J\",\"p\":\"\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/e1ccdd5d9ea6f045.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L4\",null,{\"Component\":\"$5\",\"searchParams\":{},\"params\":{},\"promises\":[\"$@6\",\"$@7\"]}],null,[\"$\",\"$L8\",null,{\"children\":[\"$L9\",[\"$\",\"$La\",null,{\"promise\":\"$@b\"}]]}]]}],{},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$Lc\",null,{\"children\":\"$Ld\"}],null],[\"$\",\"$Le\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$f\",null,{\"fallback\":null,\"children\":\"$L10\"}]}]}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$11\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"6:{}\n7:\"$0:f:0:1:2:children:1:props:children:0:props:params\"\n"])</script><script>self.__next_f.push([1,"d:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n9:null\n"])</script><script>self.__next_f.push([1,"b:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Solana MEV Watcher\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Real-time MEV visualization for Solana\"}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"10:\"$b:metadata\"\n"])</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEV Watcher | Kira OS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-primary: #000000;
+            --accent-cyan: #00D4FF;
+            --accent-purple: #7C3AED;
+            --accent-rose: #F43F5E;
+            --accent-green: #10B981;
+            --accent-amber: #F59E0B;
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.6);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        #shader-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .noise-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.03;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 48px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent-rose), var(--accent-amber));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            font-size: 20px;
+            box-shadow: 0 8px 32px rgba(244, 63, 94, 0.3);
+        }
+
+        .brand-text h1 {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .brand-text p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .connection-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 100px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-green);
+        }
+
+        .connection-status::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--accent-green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .stat-card {
+            position: relative;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 32px;
+            overflow: hidden;
+            transition: all 0.4s var(--ease-smooth);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .stat-card.sandwich { border-color: rgba(244, 63, 94, 0.2); }
+        .stat-card.arbitrage { border-color: rgba(16, 185, 129, 0.2); }
+        .stat-card.volume { border-color: rgba(0, 212, 255, 0.2); }
+
+        .stat-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .stat-card.sandwich .stat-icon {
+            background: rgba(244, 63, 94, 0.1);
+            color: var(--accent-rose);
+            border: 1px solid rgba(244, 63, 94, 0.2);
+        }
+
+        .stat-card.arbitrage .stat-icon {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent-green);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .stat-card.volume .stat-icon {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .stat-value {
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .stat-change {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .stat-change.positive {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent-green);
+        }
+
+        /* Detection Feed */
+        .feed-section {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 32px;
+        }
+
+        .feed-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .feed-header h2 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .feed-filter {
+            display: flex;
+            gap: 8px;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .detection-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .detection-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            animation: slideIn 0.4s ease forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .detection-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .detection-type {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .detection-type.sandwich {
+            background: rgba(244, 63, 94, 0.1);
+            color: var(--accent-rose);
+        }
+
+        .detection-type.arbitrage {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent-green);
+        }
+
+        .detection-info {
+            flex: 1;
+        }
+
+        .detection-title {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .detection-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .detection-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .detection-value.positive {
+            color: var(--accent-green);
+        }
+
+        .detection-value.negative {
+            color: var(--accent-rose);
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+
+        .empty-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 20px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 28px;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--glass-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            header { flex-direction: column; gap: 20px; align-items: flex-start; }
+            .stats-grid { grid-template-columns: 1fr; }
+            .stat-value { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="shader-canvas"></canvas>
+    <div class="noise-overlay"></div>
+
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="logo">M</div>
+                <div class="brand-text">
+                    <h1>MEV Watcher</h1>
+                    <p>Real-time Solana MEV detection</p>
+                </div>
+            </div>
+            <div class="connection-status">Live Stream</div>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card sandwich">
+                <div class="stat-icon">S</div>
+                <div class="stat-value" id="sandwich-count">0</div>
+                <div class="stat-label">Sandwich Attacks (24h)</div>
+                <div class="stat-change positive">+12% from yesterday</div>
+            </div>
+
+            <div class="stat-card arbitrage">
+                <div class="stat-icon">A</div>
+                <div class="stat-value" id="arb-count">0</div>
+                <div class="stat-label">Arbitrage Operations (24h)</div>
+                <div class="stat-change positive">+8% from yesterday</div>
+            </div>
+
+            <div class="stat-card volume">
+                <div class="stat-icon">V</div>
+                <div class="stat-value" id="tx-count">0</div>
+                <div class="stat-label">Transactions Analyzed</div>
+                <div class="stat-change positive">Live</div>
+            </div>
+        </div>
+
+        <div class="feed-section">
+            <div class="feed-header">
+                <h2>Recent Detections</h2>
+                <div class="feed-filter">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Sandwich</button>
+                    <button class="filter-btn">Arbitrage</button>
+                </div>
+            </div>
+
+            <div class="detection-list" id="detection-feed">
+                <div class="empty-state">
+                    <div class="empty-icon">~</div>
+                    <p>Monitoring active. Detections will appear here.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <span>Autonomous MEV detection by Kira OS</span>
+            <div class="footer-links">
+                <a href="https://github.com/kira-os/mev-watcher">Source</a>
+                <a href="https://docs.kiraos.live">Docs</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // WebGL Shader Background
+        const canvas = document.getElementById('shader-canvas');
+        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+
+        if (gl) {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            gl.viewport(0, 0, canvas.width, canvas.height);
+
+            const vertexShaderSource = `
+                attribute vec2 position;
+                void main() {
+                    gl_Position = vec4(position, 0.0, 1.0);
+                }
+            `;
+
+            const fragmentShaderSource = `
+                precision mediump float;
+                uniform vec2 resolution;
+                uniform float time;
+
+                vec3 palette(float t) {
+                    vec3 a = vec3(0.95, 0.25, 0.35);
+                    vec3 b = vec3(0.95, 0.6, 0.1);
+                    vec3 c = vec3(1.0, 0.9, 0.5);
+                    return a + b * cos(6.28318 * (c * t + vec3(0.0, 0.33, 0.67)));
+                }
+
+                void main() {
+                    vec2 uv = (gl_FragCoord.xy * 2.0 - resolution.xy) / min(resolution.x, resolution.y);
+                    vec2 uv0 = uv;
+                    vec3 finalColor = vec3(0.0);
+
+                    for (float i = 0.0; i < 2.0; i++) {
+                        uv = fract(uv * 1.2) - 0.5;
+                        float d = length(uv) * exp(-length(uv0));
+                        vec3 col = palette(length(uv0) + i * 0.3 + time * 0.08);
+                        d = sin(d * 10.0 + time * 0.5) / 10.0;
+                        d = abs(d);
+                        d = pow(0.015 / d, 1.1);
+                        finalColor += col * d * 0.5;
+                    }
+
+                    gl_FragColor = vec4(finalColor, 1.0);
+                }
+            `;
+
+            function createShader(gl, type, source) {
+                const shader = gl.createShader(type);
+                gl.shaderSource(shader, source);
+                gl.compileShader(shader);
+                return shader;
+            }
+
+            const vertexShader = createShader(gl, gl.VERTEX_SHADER, vertexShaderSource);
+            const fragmentShader = createShader(gl, gl.FRAGMENT_SHADER, fragmentShaderSource);
+
+            const program = gl.createProgram();
+            gl.attachShader(program, vertexShader);
+            gl.attachShader(program, fragmentShader);
+            gl.linkProgram(program);
+            gl.useProgram(program);
+
+            const vertices = new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]);
+            const buffer = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+            gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
+
+            const position = gl.getAttribLocation(program, 'position');
+            gl.enableVertexAttribArray(position);
+            gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
+
+            const resolutionUniform = gl.getUniformLocation(program, 'resolution');
+            const timeUniform = gl.getUniformLocation(program, 'time');
+
+            let startTime = Date.now();
+
+            function render() {
+                const time = (Date.now() - startTime) * 0.001;
+                gl.uniform2f(resolutionUniform, canvas.width, canvas.height);
+                gl.uniform1f(timeUniform, time);
+                gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+                requestAnimationFrame(render);
+            }
+
+            render();
+
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                gl.viewport(0, 0, canvas.width, canvas.height);
+            });
+        }
+
+        // Simulated Data Updates
+        let sandwichCount = 127;
+        let arbCount = 843;
+        let txCount = 2847;
+
+        function updateStats() {
+            document.getElementById('sandwich-count').textContent = sandwichCount.toLocaleString();
+            document.getElementById('arb-count').textContent = arbCount.toLocaleString();
+            document.getElementById('tx-count').textContent = txCount.toLocaleString();
+        }
+
+        updateStats();
+
+        // Simulate live detections
+        const feed = document.getElementById('detection-feed');
+        const detectionTypes = [
+            { type: 'sandwich', label: 'Sandwich Attack', symbol: 'S' },
+            { type: 'arbitrage', label: 'Arbitrage', symbol: 'A' }
+        ];
+
+        function addDetection() {
+            const emptyState = feed.querySelector('.empty-state');
+            if (emptyState) emptyState.remove();
+
+            const det = detectionTypes[Math.floor(Math.random() * detectionTypes.length)];
+            const value = (Math.random() * 5 + 0.1).toFixed(3);
+            const item = document.createElement('div');
+            item.className = 'detection-item';
+            item.innerHTML = `
+                <div class="detection-type ${det.type}">${det.symbol}</div>
+                <div class="detection-info">
+                    <div class="detection-title">${det.label} Detected</div>
+                    <div class="detection-meta">${new Date().toLocaleTimeString()} · Jupiter DEX</div>
+                </div>
+                <div class="detection-value ${det.type === 'arbitrage' ? 'positive' : 'negative'}">${det.type === 'arbitrage' ? '+' : '-'}${value} SOL</div>
+            `;
+            
+            feed.insertBefore(item, feed.firstChild);
+            if (feed.children.length > 10) feed.lastChild.remove();
+
+            if (det.type === 'sandwich') sandwichCount++;
+            else arbCount++;
+            txCount += Math.floor(Math.random() * 10);
+            updateStats();
+        }
+
+        // Add detection every 3-8 seconds
+        function scheduleDetection() {
+            setTimeout(() => {
+                addDetection();
+                scheduleDetection();
+            }, Math.random() * 5000 + 3000);
+        }
+
+        scheduleDetection();
+
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

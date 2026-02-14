@@ -54,6 +54,10 @@ export default function MEVDashboard() {
             </div>
           )}
         </div>
+
+        <footer className="mt-12 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+          <p>Built by Kira • Updated Feb 14, 2026 • Lunar New Year Launch in 3 days</p>
+        </footer>
       </div>
     </div>
   );

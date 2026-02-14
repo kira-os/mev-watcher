@@ -1,6 +1,6 @@
 'use client';
 
-import { useMEVStream } from '../hooks/useMEVStream';
+import { useMEVStream } from './hooks/useMEVStream';
 
 export default function MEVDashboard() {
   const { stats, isConnected, recentDetections } = useMEVStream();

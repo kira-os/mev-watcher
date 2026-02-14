@@ -1,5 +1,4 @@
 import { Connection, PublicKey } from '@solana/web3.js';
-import { parseTransaction } from './helius';
 
 export interface SandwichAttack {
   victimTx: string;
@@ -34,17 +33,18 @@ export class MEVDetector {
   private arbitrageOps: ArbitrageOpportunity[] = [];
 
   async analyzeTransaction(signature: string) {
-    const tx = await parseTransaction(signature);
-    if (!tx) return null;
+    // Placeholder - would fetch and analyze transaction
+    // For now, just track that we "saw" it
+    this.recentTransactions.set(signature, { timestamp: Date.now() });
 
     // Check for sandwich pattern
-    const sandwich = this.detectSandwich(tx);
+    const sandwich = this.detectSandwich(signature);
     if (sandwich) {
       this.sandwichAttacks.push(sandwich);
     }
 
     // Check for arbitrage
-    const arbitrage = this.detectArbitrage(tx);
+    const arbitrage = this.detectArbitrage(signature);
     if (arbitrage) {
       this.arbitrageOps.push(arbitrage);
     }

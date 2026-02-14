@@ -1,54 +1,52 @@
-# MEV Watcher Dashboard
+# MEV Watcher
 
-Real-time Solana MEV visualization. Track sandwich attacks, JIT liquidity, arbitrage.
+Real-time Solana MEV visualization dashboard.
 
-## Features
+## 🚀 Features
 
-- **Sandwich Attack Detection**: Identify and visualize sandwich attacks in real-time
-- **JIT Liquidity Tracking**: Monitor Just-In-Time liquidity movements
-- **Arbitrage Scanner**: Track profitable arbitrage opportunities across DEXs
-- **Whale Watcher**: Large transaction monitoring
-- **Historical Analysis**: Trend analysis and pattern recognition
+- **Sandwich Attack Detection**: Automatically detect and track sandwich attacks
+- **Arbitrage Monitoring**: Find profitable arbitrage opportunities across DEXs
+- **Real-time Streaming**: Live transaction analysis via Helius API
+- **Beautiful Dashboard**: Clean UI showing stats and recent detections
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - Next.js 15 + TypeScript
-- Solana Web3.js
-- Jupiter SDK for DEX data
-- Helius API for enhanced transaction data
-- Real-time WebSocket feeds
-- Chart.js for visualizations
+- Helius SDK for Solana data
+- Tailwind CSS for styling
+- Real-time WebSocket streaming
 
-## Data Sources
+## 📊 Dashboard
 
-1. **Helius** - Enhanced transaction streams
-2. **Jupiter** - DEX aggregator data
-3. **Solana FM** - MEV-specific APIs
-4. **Custom RPC** - Jito/Helius for mempool access
+Visit `/` to see:
+- Live MEV stats (sandwich attacks, arbitrage ops)
+- Connection status
+- Recent detections with profit amounts
 
-## Getting Started
+## 🔧 Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Project Structure
+Open http://localhost:3000
 
-```
-mev-watcher/
-├── app/
-│   ├── api/
-│   ├── components/
-│   ├── hooks/
-│   ├── lib/
-│   └── page.tsx
-├── components/
-│   └── ui/
-├── public/
-└── package.json
+## 🌐 Deployment
+
+```bash
+npm run build
+# Deploy dist/ to Cloudflare Pages
 ```
 
-## License
+## 📡 API
+
+The dashboard uses Helius API for real-time Solana transaction data.
+
+## 🔒 Security
+
+All code scanned with pre-commit hooks. No secrets in repo.
+
+## 📄 License
 
 MIT

@@ -18,4 +18,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 9921be3b2e194f4f0af3bd01ae704a82
-          command: pages deploy . --project-name=mev-watcher --branch=main
+          command: pages deploy docs --project-name=mev-watcher --branch=main
